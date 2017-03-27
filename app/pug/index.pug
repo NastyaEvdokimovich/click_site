@@ -1,0 +1,61 @@
+extends layouts/base
+
+block page-content
+	section.content
+		.container
+			.row
+				.col-md-5.col-lg-5.col-sm-5.col-xs-12
+					.my-click-rewards
+						.logo
+							img.mcr_logo(src='img/MCR_logo_white.png')
+						.boxregist
+							.register
+								h1 Register
+							.text
+								p Confirm your email to enter.
+								p Collect points + WIN
+						input.email(type='email' placeholder='Email Address')
+						br
+						input.button(type='button' value='Sign Up Now!')
+						.address
+							p
+								span.underlined-text
+									|Privacy Policy 
+								|- No purchase necessary. For full official rules,
+							p visit www.MyClickRewards.com/official-rules 
+							p or send a self-addressed stamped envelope to:
+							p "MyClickRewards", 50 S Old Dixie Hwy, Suite 7, Jupiter, FL 33458.
+				.col-md-7.col-lg-7.col-sm-7.col-xs-12
+					.content-right
+						h2 Here’s how it works:
+						.points
+							p ..................
+						.regist
+							p.just-text
+								|Register to receive
+								br
+								|your daily email
+							img.computer(src='img/computer_fullcolor.png')
+						.click_link
+							img(src='img/envelope_fullcolor.png')
+							p.click_l
+								|Click link in email
+								br
+								|to enter drawing
+						.click_entry
+							img(src='img/one_fullcolor.png')
+							p Click = 
+							img.full(src='img/one_fullcolor.png')
+							p Entry
+						.chances
+							p Chances to WIN:
+							.win
+								ul
+									li Daily
+									li Weekly
+									li Monthly
+								img(src='img/tickets_fullcolor.png')
+						.points2
+							p ...........................
+						.no_purchase
+							p &#8212 No Purchase Necessary &#8212

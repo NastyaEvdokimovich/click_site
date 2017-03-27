@@ -1,0 +1,295 @@
+@import "bourbon/_bourbon.scss"
+@import "../libs/reset"
+@import "_fonts.sass"
+@import "libs.sass"
+@import "../libs/font-awesome/css/font-awesome.min.css"
+@import "_var.sass"
+
+
+header
+ 	background-color: #3e4242
+ 	font-family: 'VAGRoundedStd-Light', $helvetica
+section.main-content
+	background-color: #3e4242
+
+
+h1 
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	color: #209f93
+	font-size: 50px
+	margin:
+		bottom: 20px
+		top: 25px
+
+h2 
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	font-size: 45px
+	color: #ff9200
+	margin-top: 40px
+
+h3
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	font-size: 29px
+	color: #ff9200
+	text-align: center
+	margin-bottom: 25px
+	margin-top: 10px
+
+.content
+	background-color: #212227
+
+
+
+ //header//
+
+
+.main-nav
+	max-height: 65px
+	font-size: 18px
+	ul
+		margin-bottom: 0px
+		li
+			display: inline-block
+			padding: 
+				top: 20px
+				bottom: 20px
+				left: 23px
+
+a, a:hover, a:focus
+	color: #cccdcd
+	text-decoration: none 
+
+
+/////mobile menu//////
+
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #000
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.slide-toggle-mnu
+	position: relative
+	nav
+		position: absolute
+		top: 0
+		right: 0
+		max-width: 400px
+		background-color: #FFF
+		z-index: 228
+		border: 1px solid black
+		padding: 40px
+		display: none
+
+.mnu-right
+	float: right
+
+	
+
+//content left//
+ 
+.my-click-rewards
+	max-width: 500px
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	background-color: #151616	
+	text-align: center
+	margin-top: -65px
+	padding-bottom: 280px
+
+.my-click-rewards:hover
+	box-shadow: $box-shadow
+	z-index: 3
+	position: relative
+
+
+.mcr_logo
+	height: auto
+	max-width: 100%
+	padding:
+		top: 15px
+		left: 60px
+		right: 60px
+
+		
+
+.text
+	color: #209f93
+	font-size: 23px
+	font-weight: 28px
+	margin-bottom: 0px
+	line-height: 0.9
+
+input.email
+	height: 55px
+	width: 300px
+	border: none
+	margin:
+		top: 50px 		
+		bottom: 53px
+input.email:hover
+	box-shadow: $box-shadow
+
+	
+input[placeholder]
+	font-size: 25px
+	text-align: center
+	margin: 75px, 20px
+	
+
+input.button
+	height: 90px
+	width: 300px
+	border-radius: 28px
+	border: 2px
+	border-color: #11120e
+	font-family: 'VAGRoundedStd-Bold', $helvetica
+	font-size: 41px
+	color:#151616
+	background: -moz-linear-gradient(#ffffff, #90d115)
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#92d219), color-stop(0.5, #90d115))
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr='#ffffff', endColorstr='#90d115')
+	box-shadow: inset 0 -5px 4px 5px #6c9d10 
+	margin-bottom: 60px
+
+.button:hover
+	background: #5bba07
+
+.underlined-text
+	text-decoration: underline	
+
+.address
+	color: #46484c
+	font-size: 13px
+	line-height: 0.2
+
+
+
+
+// //content right//
+
+.content-right
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	max-width: 1200px
+	margin-left: 25px
+
+
+
+.points, .points2
+	color: #ffda15
+	font-size: 55px
+	margin-top: -38px
+
+.regist
+	@extend .mega-flexic
+
+	.just-text
+		font-size: 33px
+		font-weight: 45px
+		color: #209f93
+	margin-bottom: 55px
+	
+
+.computer
+	margin-top: -50px
+	margin-left: 20px
+
+.click_link
+	@extend .mega-flexic
+	margin-left: 15px
+	.click_l
+		font-size: 33px
+		color: #ffda15
+		margin-left: 35px
+	margin-bottom: 45px
+
+
+.click_entry
+	@extend .mega-flexic
+	align-items: flex-start
+	p
+		font-size: 48px
+		color: #90d115
+		margin:
+			left: 20px
+	img.full
+		margin-left: 10px
+	margin-bottom: 25px
+
+.chances
+	color: #319eff
+	p
+		font-size: 33px
+	.win	
+		ul
+			font-size: 32px
+			list-style-image: url('../img/checkmark_white.gif')
+			line-height: 0.7
+			margin:
+				left: 70px
+				right: 30px
+		img
+			margin-top: -10px
+
+.chances
+	.win
+		@extend .mega-flexic
+
+.points2
+	margin-top: -10px
+
+.no_purchase
+	font-size: 25px
+	color: #6a6a6b
+	margin:
+		left: 40px
+		bottom: 60px
+
+
+ //footer//
+
+footer
+	font-family: 'VAGRoundedStd-Light', $helvetica
+	background-color: #3e4242
+	color: #ffffff	
+	font-size: 20px
+	padding-top: 50px
+	position: relative
+	z-index: 4
+		
+
+		
+
+
+@import "_media.sass"
